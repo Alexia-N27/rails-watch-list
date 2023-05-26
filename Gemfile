@@ -19,7 +19,7 @@ gem "stimulus-rails"
 
 gem "jbuilder"
 
-
+gem "dotenv-rails", groups: [:development, :test]
 
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
