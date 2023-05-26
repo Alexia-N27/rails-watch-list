@@ -5,9 +5,11 @@
   <div class=m-2>
     <%= link_to list.name, list_path(list) %>
   </div>
+  <% if list.photo.attached? %>
+    <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
+  <% end %>
 <% end %>
 
 <br>
-
 
 <%= link_to "Create a new list", new_list_path %>
